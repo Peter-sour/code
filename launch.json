@@ -1,0 +1,44 @@
+{
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open pepsi.html",
+            // "file": "c:\\Users\\Computer\\downloadddddddddddd\\ajwa.html"
+            "file": "prooject1/pepsi.html"
+        }
+    ]
+}
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+
+//         {
+//             "name": "Run Swift",
+//             "type": "swift",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/program.swift"
+//         }
+//     ]
+// }
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "chrome",
+//             "request": "launch",
+//             "name": "Open pepsi.html",
+//             "file": "${workspaceFolder}/pepsi.html",
+//             "url": "http://192.168.1.5:5500/prooject1/pepsi.html",
+//             "webRoot": "${workspaceFolder}"
+//         }
+//     ]
+// }
