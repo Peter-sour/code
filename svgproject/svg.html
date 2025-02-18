@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Categories</title>
+  <style>
+    /* Styling untuk container video categories */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #121212; /* Background gelap */
+      color: white;
+    }
+
+    .video-categories {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      width: 80%; /* Mengatur lebar container */
+      max-width: 800px;
+    }
+
+    .categories-wrapper {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 10px;
+      width: 100%; /* Agar sesuai dengan lebar container */
+      background-color: #1e1e1e; /* Background container */
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .category {
+      flex: 0 0 auto;
+      background: #444;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      width: 150px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    button {
+      background-color: #222;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #555;
+      transition: background-color 0.3s;
+    }
+
+    button:active {
+      background-color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-categories">
+    <button class="scroll-left">←</button>
+    <div class="categories-wrapper">
+      <div class="category">Nature</div>
+      <div class="category">People</div>
+      <div class="category">Love & Relationships</div>
+      <div class="category">Fitness</div>
+      <div class="category">Aerial Videography</div>
+      <div class="category">Food & Drink</div>
+    </div>
+    <button class="scroll-right">→</button>
+  </div>
+
+  <script>
+    // Ambil elemen yang diperlukan
+    const scrollWrapper = document.querySelector('.categories-wrapper');
+    const scrollLeftButton = document.querySelector('.scroll-left');
+    const scrollRightButton = document.querySelector('.scroll-right');
+
+    // Fungsi untuk menggulir ke kiri
+    scrollLeftButton.addEventListener('click', () => {
+      scrollWrapper.scrollBy({
+        left: -200, // Geser ke kiri (200px)
+        behavior: 'smooth', // Efek scroll halus
+      });
+    });
+
+    // Fungsi untuk menggulir ke kanan
+    scrollRightButton.addEventListener('click', () => {
+      scrollWrapper.scrollBy({
+        left: 200, // Geser ke kanan (200px)
+        behavior: 'smooth', // Efek scroll halus
+      });
+    });
+  </script>
+</body>
+</html>
